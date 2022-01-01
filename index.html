@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Is the day green or red?</title>
+    <link rel="stylesheet" href="/design.css" />
+  </head>
+  <body>
+
+         <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com" rel="noopener" target="_blank"><span class="blue-text"></span></a> </div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+    "symbols": [
+      {
+        "description": "SENSEX",
+        "proName": "INDEX:SENSEX"
+      },
+      {
+        "description": "Dow Jones",
+        "proName": "CURRENCYCOM:US30"
+      },
+      {
+        "description": "S&P500",
+        "proName": "CURRENCYCOM:US500"
+      },
+      {
+        "description": "Bovespa",
+        "proName": "INDEX:JZY0"
+      },
+      {
+        "description": "DAX",
+        "proName": "CURRENCYCOM:DE30"
+      },
+      {
+        "description": "FTSE",
+        "proName": "CURRENCYCOM:UK100"
+      },
+      {
+        "description": "CAC",
+        "proName": "INDEX:CAC40"
+      },
+      {
+        "description": "FTSE MIB",
+        "proName": "INDEX:FTSEMIB"
+      },
+      {
+        "description": "Nikkei 225",
+        "proName": "INDEX:NKY"
+      },
+      {
+        "description": "SZSE Component",
+        "proName": "SZSE:399106"
+      },
+      {
+        "description": "Hang Seng",
+        "proName": "INDEX:HSI"
+      },
+      {
+        "description": "KOSPI",
+        "proName": "INDEX:KSIC"
+      },
+      {
+        "description": "KLCI",
+        "proName": "INDEX:KLSE"
+      },
+      {
+        "description": "Nasdaq",
+        "proName": "FRED:NASDAQ100"
+      },
+      {
+        "description": "IBEX",
+        "proName": "CURRENCYCOM:SP35"
+      },
+      {
+        "description": "Tadawul All Share",
+        "proName": "TADAWUL:MT30"
+      }
+    ],
+    "showSymbolLogo": true,
+    "colorTheme": "dark",
+    "isTransparent": false,
+    "displayMode": "adaptive",
+    "locale": "in"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+    <header>
+      <h1>Is the day <p style="color: green;">Green</p>or <p style="color: red;">Red</p>?</h1>
+    </header>
+    <main>
+      <label class="input-label" for="initial-price">
+        Intial Price
+        <input
+          class="input"
+          type="text"
+          id="initial-price"
+          placeholder="Enter Initial Price Here"
+      /></label>
+      <label class="input-label" for="stocks-quantity">
+        Quantity of Stocks
+        <input
+          class="input"
+          type="text"
+          id="stocks-quantity"
+          placeholder="Enter the Number of Stocks bought"
+        />
+      </label>
+      <label class="input-label" for="current-price"
+        >Current Price
+        <input
+          class="input"
+          type="text"
+          id="current-price"
+          placeholder="Enter the Current Price of the stocks"/></label>
+
+      <button id="submit-btn" class="btn-check">Tell Me!!</button>
+
+      <div id="output-box" class="output"></div>
+    </main>
+    <script src="/logic.js"></script>
+  </body>
+</html>
