@@ -10,7 +10,6 @@
 }
 
 body {
-  font-family: "Work Sans", sans-serif;
   text-align: center;
 }
 
@@ -40,10 +39,11 @@ header h1 {
   outline: #fff;
   padding: 0.6rem 1rem;
   margin: 1rem auto;
-  border: 2px solid var(--primary-color);
   border-radius: 0.5rem;
   width: 100%;
   max-width: 325px;
+  border-color: #3aeda8;
+  border-width: 3px;
 }
 
 .btn-check {
@@ -62,7 +62,7 @@ header h1 {
 }
 
 .output {
-  font-size: x-large;
+  font-size: large;
   font-weight: 600;
   margin: 2rem 0;
 }
